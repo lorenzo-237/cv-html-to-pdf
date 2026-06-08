@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV – Développeur Fullstack Backend Node.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #2563eb;
+      --text: #1e293b;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+      font-size: 0.85rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: var(--card);
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--primary);
+    }
+
+    header h2 {
+      margin: 3px 0 0;
+      font-weight: 500;
+      color: var(--secondary);
+      font-size: 1rem;
+    }
+
+    header p {
+      margin: 3px 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 7.8px;
+      color: var(--primary);
+      border-left: 4px solid var(--secondary);
+      padding-left: 8px;
+    }
+
+    section p {
+      margin: 5px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-group h4 {
+      margin-bottom: 2px;
+      color: var(--secondary);
+      font-size: 0.88rem;
+    }
+
+    .skill-group p {
+      margin: 0;
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 16px;
+      margin: 3px 0;
+    }
+
+    li {
+      margin-bottom: 2px;
+      font-size: 0.82rem;
+    }
+
+    .experience {
+      margin-bottom: 12px;
+    }
+
+    .experience h4 {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--primary);
+    }
+
+    .experience span {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .experience > ul {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .tags {
+      margin-top: 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      margin: 2px 3px 0 0;
+    }
+
+    footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.78rem;
+    }
+
+    footer > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    footer h4 {
+      font-size: 0.85rem;
+      margin: 0 0 4px 0;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    footer p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <div>
+        <h1>Lorenzo MAGNI</h1>
+        <h2>Développeur Fullstack - Senior</h2>
+        <p>Passionné par le développement et les architectures modernes</p>
+        <p style="font-size: 0.75rem; margin-top: 2px;">Licence Professionnelle ACPI – 2016 à 2019</p>
+      </div>
+      <div>
+        <p>📍 Montpellier</p>
+        <p>💻 Node.js • TypeScript • React</p>
+      </div>
+    </header>
+
+    <section>
+      <h3>Profil</h3>
+      <p>
+        Développeur fullstack autour de l’écosystème
+        <strong>Node.js et TypeScript</strong>. Solide expérience dans la conception d’API robustes,
+        l’architecture logicielle moderne et les bases de données relationnelles.
+        Très bon niveau en React côté frontend.
+      </p>
+    </section>
+
+    <section>
+      <h3>Compétences techniques</h3>
+
+      <div class="grid">
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <p>Node.js / TypeScript, Express.js, NestJS, API REST & architecture microservice, Python</p>
+        </div>
+
+        <div class="skill-group">
+          <h4>Bases de données</h4>
+          <p>PostgreSQL, HFSQL, <strong>Prisma ORM</strong>, TypeORM, Sequelize, LDAP</p>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <p>React (très bon niveau), React Native, Vue.js</p>
+        </div>
+
+        <div class="skill-group">
+          <h4>DevOps & environnement</h4>
+          <p>Docker & Docker Compose, Linux, CI/CD</p>
+        </div>
+
+        <div class="skill-group">
+          <h4>Autres</h4>
+          <p>WinDev (expertise métier), Méthodes agiles SCRUM, Analyse de données & migration</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Expériences professionnelles</h3>
+
+      <div class="experience">
+        <h4>Développeur Fullstack & Lead Dev</h4>
+        <span>Depuis 2019</span>
+
+        <ul>
+          <li>Conception et gestion d'un logiciel médical avec développement du module <strong>Urgencemed</strong> pour les centres d'urgence</li>
+          <li>Développement de webservices internes (Node.js/TypeScript et Python) et intégration de services tiers (SAP, Pandalab)</li>
+          <li>Création d'outils de gestion clients et utilisateurs (React) avec API backend robuste</li>
+          <li>Analyse de données, outils de migration, maîtrise PostgreSQL & HFSQL</li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">WinDev</span>
+          <span class="tag">SCRUM</span>
+        </div>
+      </div>
+
+      <div class="experience">
+        <h4>Développeur Fullstack Freelance</h4>
+        <span>Projets personnels</span>
+
+        <ul>
+          <li>Développement d'un mini SaaS de gestion de projets collaboratifs avec focus sur l'architecture, la qualité du code et la scalabilité</li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">SaaS</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Clean Code</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h4>💡 Centres d'intérêt techniques</h4>
+        <p>Veille technologique & open source, Clean Code, Architecture</p>
+      </div>
+
+      <div>
+        <h4>🎯 Loisirs</h4>
+        <p>Sport (renforcement musculaire, crossfit), Cyclisme, Voyage</p>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
